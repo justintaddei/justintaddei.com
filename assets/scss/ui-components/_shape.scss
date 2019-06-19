@@ -1,0 +1,13 @@
+%shape {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    min-width: 800px;
+    background-size: 100%;
+    background-position: bottom;
+    pointer-events: none;
+    filter: drop-shadow(0 -5px 5px rgba(0, 0, 0, 0.5));
+}

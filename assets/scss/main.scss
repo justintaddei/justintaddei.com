@@ -1,0 +1,23 @@
+@import './color';
+@import './typography';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: $brand-teal;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+@import './ui-components/hr'

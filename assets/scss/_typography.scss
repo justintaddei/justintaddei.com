@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Sky of Eden Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Sky of Eden Regular'),
+    url('/fonts/Sky_of_Eden-Regular.woff') format('woff');
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Sky of Eden Regular', sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+
+  &.page-title {
+    font-size: 70px;
+  }
+}
+
+p {
+  font-size: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-m {
+  margin: 0;
+}
