@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1703 1081" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-5634,-1779)">
+        <g transform="matrix(2.13086,0,0,1,-3989.64,-0.398141)">
+            <g id="JT-Logo" serif:id="JT Logo" transform="matrix(3.59723,-1.42481e-19,6.68657e-20,-7.66634,3981.77,6594.87)">
+                <g transform="matrix(1,0,0,-1,-3474.03,2471.67)">
+                    <circle cx="3644.8" cy="1962.31" r="22.166" style="fill:white;"/>
+                </g>
+                <g transform="matrix(-1.03008,0,0,1.04099,1112.47,-1224.23)">
+                    <path d="M764.067,1779.35L720.157,1779.35L764.067,1730.06L764.067,1779.35Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1,0,0,-1,-2610.13,2456.47)">
+                    <path d="M2862.29,1828.4L2862.29,1924.46C2862.29,1936.42 2857.51,1947.88 2849.02,1956.3C2840.53,1964.71 2829.02,1969.38 2817.07,1969.28C2817.06,1969.28 2817.06,1969.28 2817.06,1969.28L2817.06,1828.4C2817.06,1828.4 2862.29,1828.4 2862.29,1828.4Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(1,0,0,-1,-2610.13,2456.47)">
+                    <rect x="2876.28" y="1828.4" width="45.23" height="140.874" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

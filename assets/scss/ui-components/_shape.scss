@@ -1,13 +1,14 @@
 %shape {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    min-width: 800px;
-    background-size: 100%;
-    background-position: bottom;
-    pointer-events: none;
-    filter: drop-shadow(0 -5px 5px rgba(0, 0, 0, 0.5));
+  content: "";
+  display: block;
+  position: absolute;
+  // This stops a weird 1px line rendering glitch from showing up.
+  bottom: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  min-width: 800px;
+  background-size: 100% 100% !important;
+  background-position: bottom !important;
+  pointer-events: none;
+  //   filter: drop-shadow(0 -5px 5px rgba(0, 0, 0, 0.5));
 }

@@ -1,34 +1,70 @@
 @font-face {
-  font-family: 'Sky of Eden Regular';
+  font-family: "Sky of Eden Regular";
   font-style: normal;
   font-weight: normal;
-  font-display: swap;
-  src: local('Sky of Eden Regular'),
-    url('/fonts/Sky_of_Eden-Regular.woff') format('woff');
+  font-display: block;
+  src: local("Sky of Eden Regular"),
+    url("/fonts/Sky_of_Eden-Regular.woff") format("woff");
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Sky of Eden Regular', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  // font-family: "Plaster", cursive;
+  // font-family: "Righteous", cursive;
+  font-family: "Sky of Eden Regular", Arial, Helvetica, sans-serif;
+  // Safari cuts off the top of the font otherwise 😢
+  line-height: 1.35em;
 }
 
 h1 {
+  font-size: 70px;
+}
+
+h2 {
   font-size: 35px;
 
-  &.page-title {
-    font-size: 70px;
+  @media screen and (max-width: 700px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 410px) {
+    font-size: 25px;
   }
 }
 
 p {
   font-size: 30px;
+
+  @media screen and (max-width: 1080px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 410px) {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .no-m {

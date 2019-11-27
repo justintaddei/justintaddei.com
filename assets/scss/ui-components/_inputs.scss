@@ -1,0 +1,46 @@
+input {
+  background: #292c34;
+  border: 3px solid $home-green;
+  outline: none;
+  padding: 5px;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-size: 25px;
+
+  &:focus {
+    box-shadow: 0 0 10px $home-green;
+  }
+
+  &:invalid {
+    border-color: $home-red;
+
+    &:focus {
+      box-shadow: 0 0 10px $home-red;
+    }
+  }
+}
+
+textarea {
+  background: #292c34;
+  border: 3px solid $home-green;
+  outline: none;
+  padding: 5px;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+
+  &:focus {
+    box-shadow: 0 0 10px $home-green;
+  }
+
+  &:invalid {
+    border-color: $home-red;
+
+    &:focus {
+      box-shadow: 0 0 10px $home-red;
+    }
+  }
+}

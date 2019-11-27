@@ -3,4 +3,37 @@ $brand-green: #00969a;
 $brand-purple: #55007a;
 $brand-teal: #00506c;
 
-$brand-grad: linear-gradient(-60deg, $brand-green 25%, $brand-blue);
+/* Color Theme Swatches in Hex */
+$home-green: #14a697;
+$home-blue: #1470a6;
+$home-yellow: #f2c12e;
+$home-orange: #f29d35;
+$home-salmon: #f27649;
+$home-purple: #7400a1;
+$home-red: #f25252;
+
+$brand-grad-v: linear-gradient(to top, $home-green, $home-blue);
+$brand-grad-h: linear-gradient(to left, $home-green, $home-blue);
+
+// Portfolio
+
+/* Color Theme Swatches in Hex */
+$Modern-Kids-1-hex: #73020c;
+$Modern-Kids-2-hex: #a60f1b;
+$Modern-Kids-3-hex: #3c88a6;
+$Modern-Kids-4-hex: #3f8c85;
+$Modern-Kids-5-hex: #aef2eb;
+
+/* Color Theme Swatches in RGBA */
+$Modern-Kids-1-rgba: rgba(114, 2, 11, 1);
+$Modern-Kids-2-rgba: rgba(165, 14, 26, 1);
+$Modern-Kids-3-rgba: rgba(59, 135, 165, 1);
+$Modern-Kids-4-rgba: rgba(63, 140, 133, 1);
+$Modern-Kids-5-rgba: rgba(174, 242, 235, 1);
+
+/* Color Theme Swatches in HSLA */
+$Modern-Kids-1-hsla: hsla(354, 96, 22, 1);
+$Modern-Kids-2-hsla: hsla(355, 83, 35, 1);
+$Modern-Kids-3-hsla: hsla(196, 46, 44, 1);
+$Modern-Kids-4-hsla: hsla(174, 37, 39, 1);
+$Modern-Kids-5-hsla: hsla(173, 72, 81, 1);

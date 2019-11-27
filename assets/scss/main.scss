@@ -1,23 +1,31 @@
-@import './color';
-@import './typography';
+@import "./color";
+@import "./typography";
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background: $brand-teal;
+  background: #22252b;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.page-enter-active, .page-leave-active {
-  transition: opacity .5s;
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s;
 }
-.page-enter, .page-leave-to {
+.page-enter,
+.page-leave-to {
   opacity: 0;
 }
 
-@import './ui-components/hr'
+a {
+  text-decoration: none;
+}
+
+@import "./ui-components/hr";
+@import "./ui-components/inputs";

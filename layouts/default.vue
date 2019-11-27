@@ -6,12 +6,14 @@
 </template>
 
 <style lang="scss">
-@import '@/assets/scss/main.scss';
+  @import "@/assets/scss/main.scss";
 </style>
 
 <script>
-import PageHeader from '@/components/PageHeader'
-export default {
-  components: { PageHeader }
-}
+  import PageHeader from "@/components/PageHeader";
+  import smoothscroll from "smoothscroll-polyfill";
+
+  export default {
+    components: { PageHeader }
+  };
 </script>

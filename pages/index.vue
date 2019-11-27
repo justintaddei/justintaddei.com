@@ -2,285 +2,901 @@
 <template>
   <div>
     <section class="section-one">
-      <div class="tag-line">
-        <h1 class="page-title">Justin Taddei</h1>
-        <p class="light">
-          Freelance Web Developent<br />
-          &amp; Graphic Design
-        </p>
+      <div class="arcs">
+        <div class="arc"></div>
+        <div class="arc"></div>
+        <div class="arc"></div>
+        <div class="arc"></div>
+        <div class="arc"></div>
+        <div class="arc"></div>
+        <div class="arc"></div>
+        <div class="arc"></div>
       </div>
-      <svg
-        v-show="readyForRWDAnimation"
-        id="rwdAnimation"
-        class="rwd"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5"
-        version="1.1"
-        viewBox="0 0 512 300"
-        xml:space="preserve"
-      >
-        <g id="laptop">
-          <path
-            id="Curves"
-            d="M276.63,187.23c0.431,-0.883 0.376,-1.926 -0.145,-2.76c-0.52,-0.833 -1.433,-1.34 -2.416,-1.341c-32.815,-0.031 -65.629,-0.101 -98.444,-0.208c-8.876,-0.08 -16.971,-7.726 -17.058,-17.057c-0.16,-49.221 -0.16,-98.443 0,-147.664c0.083,-8.854 7.66,-16.97 17.058,-17.058c93.037,-0.292 186.075,-0.292 279.111,0c8.858,0.083 16.972,7.789 17.058,17.059c0.138,49.22 0.138,98.441 0,147.662c-0.082,8.823 -7.658,16.973 -17.058,17.058c-32.814,0.107 -65.628,0.177 -98.442,0.208c-0.983,0.001 -1.896,0.508 -2.417,1.342c-0.521,0.833 -0.575,1.876 -0.145,2.76c4.56,9.36 9.084,18.738 13.583,28.128c2.732,5.823 1.308,13.314 -3.398,17.684c-2.752,2.556 -6.461,4.023 -10.239,4.068c-25.665,0.106 -51.33,0.106 -76.995,0c-6.919,-0.082 -13.385,-5.325 -14.792,-12.154c-0.661,-3.211 -0.242,-6.62 1.157,-9.599c4.502,-9.388 9.024,-18.767 13.582,-28.128Zm16.862,-4.087c-0.515,0.232 -0.951,0.633 -1.206,1.143c-5.965,12.172 -12.162,24.238 -17.721,36.601c-0.646,1.468 0.517,3.429 2.221,3.449c25.616,0.106 51.244,0.717 76.85,-0.001c1.602,-0.057 2.856,-1.966 2.135,-3.503c-5.854,-12.22 -11.54,-24.525 -17.716,-36.586c-0.255,-0.488 -0.68,-0.876 -1.179,-1.103c-14.461,0.008 -28.923,0.008 -43.384,0Zm-117.75,-169.226c-2.299,0.007 -4.378,2.035 -4.4,4.363c-0.16,49.195 -1.077,98.402 0.002,147.585c0.063,2.253 2.066,4.261 4.36,4.281c93.011,0.304 186.045,2.016 279.035,-0.001c2.247,-0.063 4.259,-2.065 4.28,-4.36c0.138,-49.196 1.055,-98.403 -0.001,-147.588c-0.063,-2.25 -2.069,-4.258 -4.361,-4.28c-92.971,-0.292 -185.943,0 -278.915,0Z"
-            style="fill:#00506c"
-          />
-          <path
-            id="Curve"
-            d="M187.174,29.758l42.498,0"
-            style="fill:none;stroke:#00506c;stroke-width:12.78px"
-          />
-          <path
-            id="Curve1"
-            d="M255.949,29.758l187.004,0"
-            style="fill:none;stroke:#00506c;stroke-width:12.78px"
-          />
-          <rect
-            id="Rectangle"
-            width="68.775"
-            height="45.093"
-            x="187.174"
-            y="56.198"
-            style="fill:#55007a"
-          />
-          <path
-            id="Curve2"
-            d="M256.367,49.824c1.278,0.126 1.483,0.247 2.026,0.472c2.056,0.852 3.596,2.839 3.889,5.068c0.048,0.369 0.042,0.462 0.055,0.834l0,45.093c-0.042,1.284 -0.15,1.496 -0.339,2.053c-0.761,2.242 -2.847,3.968 -5.215,4.28c-0.369,0.048 -0.463,0.042 -0.834,0.054l-68.775,0c-1.284,-0.042 -1.497,-0.15 -2.054,-0.339c-2.241,-0.761 -3.967,-2.846 -4.279,-5.214c-0.049,-0.369 -0.043,-0.463 -0.055,-0.834l0,-45.093c0.042,-1.284 0.15,-1.497 0.339,-2.054c0.761,-2.241 2.846,-3.968 5.215,-4.279c0.369,-0.049 0.463,-0.043 0.834,-0.055l68.775,0c0.139,0.005 0.278,0.009 0.418,0.014Z"
-            style="fill:#55007a"
-          />
-          <path
-            id="Curve3"
-            d="M285.746,60.09l125.547,0"
-            style="fill:none;stroke:#00506c;stroke-width:8.28px"
-          />
-          <path
-            id="Curve4"
-            d="M285.746,78.744l100.892,0"
-            style="fill:none;stroke:#00506c;stroke-width:8.28px"
-          />
-          <path
-            id="Curve5"
-            d="M285.746,97.398l79.268,0"
-            style="fill:none;stroke:#00506c;stroke-width:8.28px"
-          />
-          <rect
-            id="Rectangle1"
-            width="66.913"
-            height="18.53"
-            x="187.174"
-            y="131.766"
-            style="fill:#00506c;stroke:#00506c;stroke-width:12.78px"
-          />
-          <rect
-            id="Rectangle2"
-            width="72.836"
-            height="18.53"
-            x="278.645"
-            y="131.766"
-            style="fill:#00506c;stroke:#00506c;stroke-width:12.78px"
-          />
-          <rect
-            id="Rectangle3"
-            width="66.913"
-            height="18.53"
-            x="376.04"
-            y="131.766"
-            style="fill:#00506c;stroke:#00506c;stroke-width:12.78px"
-          />
-        </g>
-        <g id="phone">
-          <path
-            id="Curves1"
-            d="M126.943,237.113c-31.809,0.104 -45.467,0.104 -77.276,0c-8.224,-0.075 -15.723,-7.159 -15.803,-15.803c-0.149,-45.601 -0.149,-91.203 0,-136.805c0.076,-8.202 7.096,-15.721 15.803,-15.802c29.646,-0.094 57.448,-0.063 77.276,0c8.206,0.076 15.723,7.215 15.803,15.804c0.128,45.6 0.128,91.201 0,136.802c-0.076,8.174 -7.095,15.725 -15.803,15.804Zm-77.168,-156.575c-2.129,0.007 -4.056,1.885 -4.076,4.042c-0.149,45.577 -0.998,91.165 0.001,136.731c0.059,2.087 1.914,3.966 4.04,3.966c25.682,0 36.98,-0.001 77.205,-0.001c2.082,-0.058 3.946,-1.913 3.966,-4.039c0.127,-45.578 0.977,-91.166 -0.001,-136.734c-0.059,-2.085 -1.917,-3.945 -4.041,-3.965c-20.517,0 -56.19,0 -77.094,0Z"
-            style="fill:#00506c"
-          />
-          <path
-            id="Curve6"
-            d="M60.357,95.759l55.881,0"
-            style="fill:none;stroke:#00506c;stroke-width:12.44px"
-          />
-          <rect
-            id="Rectangle4"
-            width="55.881"
-            height="40.154"
-            x="60.356"
-            y="117.322"
-            style="fill:#55007a;stroke:#55007a;stroke-width:11px"
-          />
-          <path
-            id="Curve7"
-            d="M60.357,179.038l55.881,0"
-            style="fill:none;stroke:#00506c;stroke-width:7.6px"
-          />
-          <path
-            id="Curve8"
-            d="M60.357,194.671l47.799,0"
-            style="fill:none;stroke:#00506c;stroke-width:7.6px"
-          />
-          <path
-            id="Curve9"
-            d="M60.357,210.304l40.551,0"
-            style="fill:none;stroke:#00506c;stroke-width:7.6px"
-          />
-        </g>
-        <path
-          id="wave"
-          d="M4.685,286.399c51.664,-9.97 105.927,-25.709 180.011,-19.916c77.617,6.068 136.318,54.355 194.535,10.693c58.216,-43.662 62.26,-69.737 128.075,-65.509"
-          style="fill:none;stroke:#00506c;stroke-width:7.99px"
-        />
-      </svg>
+      <div class="tag-line">
+        <div class="logo-container">
+          <!-- <img src="/imgs/logo.svg" class="logo" /> -->
+          <div class="logo">
+            <svg
+              class="logo-svg"
+              viewBox="0 0 1703 1081"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+            >
+              <circle
+                cx="3644.8"
+                cy="1962.31"
+                r="22.166"
+                transform="matrix(7.66518 0 0 7.66634 -27767.317 -14133.19)"
+              />
+              <path
+                d="M1356.075.476h346.7v346.7h-346.7zM794.584.474v736.428c0 91.69-36.64 179.546-101.717 244.097-65.078 64.474-153.304 100.275-244.903 99.509h-.076V.474h346.696zM901.82.474h346.695v1079.988H901.82z"
+              />
+            </svg>
+          </div>
+
+          <h1 class="page-title">Justin Taddei</h1>
+        </div>
+        <div>
+          <p class="light">
+            Freelance Web Development<br />
+            &amp; Graphic Design
+          </p>
+          <Button href="/contact" class="primary">
+            Get in touch
+          </Button>
+        </div>
+      </div>
+      <div class="grad"></div>
+
+      <button class="scroll-btn" @click="scrollTo('#sectionTwo')">
+        <i class="material-icons">arrow_downward</i>
+      </button>
     </section>
     <section class="section-two">
-      <p class="experience text-center">
-        Over {{ experience }} seconds of experience
+      <span class="v-line" id="sectionTwo"></span>
+      <div class="triangle"></div>
+      <div class="circle"></div>
+      <div class="square"></div>
+      <h2>Stop Being Ordinary</h2>
+      <p>
+        Appearing professional is one thing, but being dull is another. So stop
+        being ordinary, and start being <b>original</b>.
       </p>
-      <hr />
-      <h1>
-        Why I stand out
-        <br />
-        &amp; Why you will also
-      </h1>
+      <div class="cross"></div>
+
+      <button class="scroll-btn" @click="scrollTo('#sectionThree')">
+        <i class="material-icons">arrow_downward</i>
+      </button>
+    </section>
+    <section class="section-three">
+      <span class="v-line" id="sectionThree"></span>
+      <h2>Don't Be Generic</h2>
+      <p>
+        It's impossible to stand out when you appear like all the rest...
+        generic WordPress templates are not your friend.
+      </p>
+      <div class="generic-squares">
+        <div class="square"></div>
+        <div class="cross"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+
+      <button class="scroll-btn" @click="scrollTo('#sectionFour')">
+        <i class="material-icons">arrow_downward</i>
+      </button>
+    </section>
+    <section class="section-four">
+      <span class="v-line" id="sectionFour"></span>
+      <h2>Start Being Original</h2>
+      <div class="sec4p">
+        <p>
+          When you stand out you'll be rememebered. Original design keeps your
+          customers interested—after all, I've held your attention this far,
+          haven't I?
+        </p>
+        <div class="buttons">
+          <Button href="/portfolio" class="larger fixed-width">
+            View portfolio
+          </Button>
+
+          <Button href="/contact" class="primary fixed-width">
+            Get in touch
+          </Button>
+        </div>
+      </div>
     </section>
   </div>
 </template>
 
 <script>
-import anime from 'animejs'
+  import Button from "../components/inputs/Button.vue";
+  import anime from "animejs";
 
-export default {
-  data() {
-    return {
-      experience: '252,288,000',
-      readyForRWDAnimation: false
-    }
-  },
-
-  created() {
-    this.$store.commit('theme/setIsHeaderDark', false)
-    this.$store.commit('theme/setShouldHeaderHaveTitle', false)
-  },
-
-  mounted() {
-    this.updateExperience()
-    this.interval = setInterval(() => {
-      this.updateExperience()
-    }, 1000)
-
-    this.animateRWD()
-  },
-
-  beforeDestroy() {
-    if (this.animation) this.animation.pause()
-    clearInterval(this.interval)
-  },
-
-  methods: {
-    updateExperience() {
-      const time = new Date(Date.now() - new Date('11/16/2011').getTime())
-      this.experience = Math.round(time / 1000)
-        .toString()
-        .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+  export default {
+    components: {
+      Button
+    },
+    head() {
+      return {
+        title: "Freelance Web Design | Offical site of Justin Taddei"
+      };
     },
 
-    animateRWD() {
-      const tl = anime.timeline({
-        easing: 'easeOutExpo'
-      })
-      tl.add({
-        targets: '#rwdAnimation #wave',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        duration: 3000
-      })
-        .add(
-          {
-            targets: '#rwdAnimation #phone',
-            opacity: [0, 1],
-            translateY: ['75px', 0],
-            duration: 1500
-          },
-          '-=2500'
-        )
-        .add(
-          {
-            targets: '#rwdAnimation #laptop',
-            opacity: [0, 1],
-            translateY: ['75px', 0],
-            duration: 1500
-          },
-          '-=2000'
-        )
+    created() {
+      this.$store.commit("theme/setIsHeaderDark", false);
+      this.$store.commit("theme/setShouldHeaderHaveTitle", false);
+    },
 
-      this.animation = tl
-
-      tl.finished.then(() => {
-        this.animation = anime({
-          targets: '#rwdAnimation #phone, #rwdAnimation #laptop',
-          delay: anime.stagger(1500),
-          duration: 3000,
-
-          direction: 'alternate',
-          loop: true,
-          easing: 'easeOutQuad',
-          translateY: [0, '15px']
-        })
-      })
-      this.readyForRWDAnimation = true
+    methods: {
+      scrollTo(e) {
+        window.scrollBy({
+          top: document.querySelector(e).getBoundingClientRect().top,
+          behavior: "smooth"
+        });
+      }
     }
-  }
-}
+  };
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_color.scss';
-@import '@/assets/scss/ui-components/_shape.scss';
-.section-one {
-  position: relative;
-  background: $brand-grad;
-  height: 75vh;
-  min-height: 500px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0 0 100px;
-  overflow: hidden;
-
-  &::after {
-    @extend %shape;
-    height: 55%;
-    background: no-repeat url('/imgs/waves/wave-home-first.svg');
-  }
-
-  h1 {
-    margin: 0;
-  }
-
-  p {
-    opacity: 0.5;
-    font-size: 42px;
-    line-height: 1em;
-    padding: 0;
-    margin: 0;
-  }
-
-  .rwd {
-    width: 350px;
+  @import "@/assets/scss/_color.scss";
+  @import "@/assets/scss/ui-components/_shape.scss";
+  .section-one {
     position: relative;
-    right: 300px;
-  }
-}
+    background: #282c34;
+    background: #fcfcfc;
+    height: 100vh;
+    min-height: 550px;
+    // color: #212121;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 
-.section-two {
-  padding: 100px 20%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background: #fff;
+    &::after {
+      @extend %shape;
+      height: 45%;
+      background: no-repeat url("/imgs/waves/wave-home-first.svg");
+    }
+    padding: 0 0 0 33%;
 
-  .experience {
-    margin: 10px 0;
-    font-size: 40px;
+    .arcs {
+      position: fixed;
+      opacity: 0.7;
+      left: 100vw;
+      top: 50vh;
+      background: green;
+      animation: arc-rotate 8s linear infinite reverse, fade-in 2s ease;
+
+      contain: layout;
+      will-change: transform;
+
+      .arc {
+        border-radius: 50%;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        will-change: transform;
+        border: 15px solid $home-red;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        $d: 50vw;
+        width: $d;
+        height: $d;
+
+        &:nth-child(2) {
+          border: 15px solid $home-green;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          $d: 75vw;
+          width: $d;
+          height: $d;
+          transform: translate(-50%, -50%) rotate(25deg);
+        }
+        &:nth-child(3) {
+          border: 15px solid $home-salmon;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          $d: 100vw;
+          width: $d;
+          height: $d;
+          transform: translate(-50%, -50%) rotate(175deg);
+        }
+        &:nth-child(4) {
+          border: 15px solid $home-yellow;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          $d: 125vw;
+          width: $d;
+          height: $d;
+          transform: translate(-50%, -50%) rotate(280deg);
+        }
+        &:nth-child(5) {
+          border: 15px solid $home-blue;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          $d: 110vw;
+          width: $d;
+          height: $d;
+          transform: translate(-50%, -50%) rotate(-15deg);
+        }
+        &:nth-child(6) {
+          border: 15px solid $home-orange;
+          border-top-color: transparent;
+          border-right-color: transparent;
+          $d: 150vw;
+          width: $d;
+          height: $d;
+          transform: translate(-50%, -50%) rotate(25deg);
+        }
+        &:nth-child(7) {
+          border: 15px solid $home-purple;
+          border-top-color: transparent;
+          border-right-color: transparent;
+          $d: 90vw;
+          width: $d;
+          height: $d;
+          transform: translate(-50%, -50%) rotate(-50deg);
+        }
+        &:nth-child(8) {
+          border: 15px solid $home-blue;
+          border-bottom-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          $d: 20vw;
+          width: $d;
+          height: $d;
+          transform: translate(-50%, -50%) rotate(230deg);
+        }
+
+        @keyframes arc-rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    .grad {
+      position: absolute;
+      background: linear-gradient(to bottom, #282c34, transparent 190px);
+      background: linear-gradient(to bottom, #fff, transparent 190px);
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .tag-line {
+      transform: translate(-50%, 0);
+      position: relative;
+      // color: #fcfcfc;
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        color: #22252b;
+
+        .logo {
+          $size: 115px;
+          width: $size;
+          height: $size;
+          // filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.46));
+          margin: 0 32px 16px 0;
+          background: $home-blue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          z-index: 1;
+          // box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+          //   0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+          .logo-svg {
+            $size: 90px;
+            width: $size;
+            height: $size;
+            color: #fcfcfc;
+          }
+        }
+
+        h1 {
+          margin: 0;
+          // text-shadow: 0 8px 10px rgba(0, 0, 0, 0.14),
+          //   0 3px 14px rgba(0, 0, 0, 0.12), 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      p {
+        color: #ddd;
+        color: #444;
+        font-size: 42px;
+        line-height: 1em;
+        padding: 0;
+        margin: 0;
+        // A white shadow help make the text readable over the animation
+        // text-shadow: 0 0 10px #fff, 0 0 8px #fff, 0 0 5px #fff;
+        //text-shadow: 0 12px 8px rgba(0, 0, 0, 0.14), 0 6px 5px rgba(0, 0, 0, 0.12),
+        //0 8px 4px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .scroll-btn {
+      background: $home-green;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 1080px) {
+      padding: 0;
+      justify-content: center;
+      .tag-line {
+        transform: none;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      min-height: 700px;
+
+      .tag-line {
+        .logo-container {
+          flex-direction: column;
+          align-items: center;
+          h1 {
+            font-size: 60px;
+          }
+          .logo {
+            margin: 0 0 16px 0;
+            $size: 125px;
+            width: $size;
+            height: $size;
+          }
+        }
+        p {
+          font-size: 30px;
+          color: #22252b;
+          text-shadow: 0 0 3px #fff;
+        }
+      }
+
+      .scroll-btn {
+        bottom: 8%;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .tag-line {
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+    @media screen and (max-width: 490px) {
+      .tag-line {
+        .logo-container {
+          h1 {
+            font-size: 50px;
+          }
+        }
+        p {
+          font-size: 25px;
+        }
+      }
+
+      .scroll-btn {
+        bottom: 6%;
+      }
+    }
+    @media screen and (max-width: 410px) {
+      .tag-line {
+        .logo-container {
+          h1 {
+            font-size: 45px;
+          }
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+    @media screen and (max-width: 380px) {
+      .tag-line {
+        .logo-container {
+          h1 {
+            font-size: 38px;
+          }
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+
+      .scroll-btn {
+        bottom: 6%;
+      }
+    }
   }
-}
+
+  .scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 12.5%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+    $size: 75px;
+    width: $size;
+    height: $size;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    box-shadow: 0 12px 10px 2px rgba(0, 0, 0, 0.14),
+      0 6px 10px 5px rgba(0, 0, 0, 0.12), 0 8px 8px -4px rgba(0, 0, 0, 0.2);
+    i.material-icons {
+      font-size: 35px;
+    }
+
+    transition: transform 0.1s ease;
+
+    &:hover,
+    &:focus {
+      transform: translate(-50%, 0) scale(1.1);
+    }
+
+    &:focus {
+      transform: translate(-50%, 0) scale(1.2);
+    }
+  }
+
+  .section-two {
+    padding: 50px 25% 150px 25%;
+    background: #22252b;
+    color: #fcfcfc;
+    position: relative;
+    // overflow-x: hidden;
+    text-align: center;
+
+    &::after {
+      @extend %shape;
+      height: 10%;
+      background: no-repeat url("/imgs/waves/wave-home-second.svg");
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $home-yellow;
+      pointer-events: none;
+      left: 300px;
+      top: -25px;
+    }
+    .square {
+      width: 50px;
+      height: 50px;
+      background: $home-purple;
+      pointer-events: none;
+      left: -250px;
+      top: -90px;
+    }
+
+    .cross {
+      pointer-events: none;
+      background: $home-blue;
+      height: 50px;
+      width: 10px;
+      &:after {
+        background: $home-blue;
+        content: "";
+        height: 10px;
+        top: 20px;
+        left: -20px;
+        position: absolute;
+        width: 50px;
+      }
+
+      left: 175px;
+    }
+
+    .triangle {
+      pointer-events: none;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 50px solid $home-red;
+      left: -400px;
+      top: 25px;
+    }
+
+    .triangle,
+    .square,
+    .circle,
+    .cross {
+      margin: 0 auto -50px auto;
+      position: relative;
+      animation: home-rotate 30s linear infinite;
+    }
+
+    .v-line {
+      width: 1px;
+      height: 200px;
+      background: #fcfcfc;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: -75px;
+      margin-bottom: -50px;
+
+      /* @media screen and (max-width: 550px) {
+                                                                                                                                            height: 80px;
+                                                                                                                                          } */
+      @media screen and (max-width: 550px) {
+        height: 70px;
+        top: -50px;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      margin: 0 0 50px 0;
+    }
+
+    p {
+      background: url("/imgs/waves/home-section-one-bubble.svg") no-repeat;
+      background-size: 100% 100%;
+
+      b {
+        color: #fcfcfc;
+        // text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+      }
+
+      padding: 125px 100px;
+    }
+
+    .scroll-btn {
+      background: $home-red;
+      color: #fff;
+      bottom: auto;
+      left: 37.5px;
+      position: relative;
+      margin: auto;
+    }
+    @media screen and (max-width: 1460px) {
+      padding: 50px 20% 150px 20%;
+    }
+    @media screen and (max-width: 1080px) {
+      p {
+        background: url("/imgs/waves/home-section-one-bubble.svg") no-repeat;
+        background-size: 100% 100%;
+        padding: 75px 65px;
+      }
+    }
+    @media screen and (max-width: 915px) {
+      .triangle {
+        left: -300px;
+        top: 25px;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      padding: 50px 16% 150px 16%;
+    }
+    @media screen and (max-width: 700px) {
+      .circle {
+        left: 230px;
+        top: -75px;
+      }
+      .square {
+        left: -150px;
+        top: -150px;
+      }
+
+      .cross {
+        top: -10px;
+        left: 175px;
+      }
+
+      .triangle {
+        left: -220px;
+        top: 75px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      padding: 50px 5% 150px 5%;
+      .circle {
+        left: 170px;
+        top: -120px;
+      }
+      .square {
+        left: -150px;
+        top: -70px;
+        width: 25px;
+        height: 25px;
+      }
+
+      .cross {
+        top: -10px;
+        left: 165px;
+      }
+
+      .triangle {
+        left: -200px;
+        top: 20px;
+      }
+    }
+    @media screen and (max-width: 410px) {
+      .circle {
+        left: 150px;
+        top: -125px;
+      }
+      .square {
+        left: -125px;
+        top: -100px;
+      }
+
+      .cross {
+        top: -10px;
+        left: 140px;
+      }
+
+      .triangle {
+        left: -170px;
+        top: 20px;
+      }
+
+      p {
+        padding: 50px 30px;
+      }
+    }
+  }
+
+  .section-three {
+    padding: 50px 25% 150px 25%;
+    background: #fcfcfc;
+    color: #22252b;
+    position: relative;
+    // overflow-x: hidden;
+    text-align: center;
+
+    .square {
+      width: 50px;
+      height: 50px;
+      background: #c9c9c9;
+      pointer-events: none;
+      border-radius: 5px;
+      // animation: home-rotate 90s linear infinite reverse;
+    }
+
+    .triangle {
+      pointer-events: none;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 50px solid $home-green;
+    }
+
+    .cross {
+      pointer-events: none;
+      background: $home-green;
+      height: 50px;
+      width: 10px;
+      animation: home-rotate 20s linear infinite;
+      &:after {
+        background: $home-green;
+        content: "";
+        height: 10px;
+        top: 20px;
+        left: -20px;
+        position: absolute;
+        width: 50px;
+      }
+    }
+
+    .square,
+    .triangle,
+    .cross {
+      margin: auto;
+      position: relative;
+    }
+
+    .generic-squares {
+      display: flex;
+      height: 100px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .v-line {
+      width: 1px;
+      height: 200px;
+      background: #22252b;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: -100px;
+      margin-bottom: -50px;
+
+      @media screen and (max-width: 550px) {
+        height: 70px;
+        top: -50px;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      margin: 0 0 50px 0;
+    }
+
+    p {
+      background: #ececec;
+      color: #282c34;
+
+      padding: 75px 100px;
+      border-radius: 10px;
+    }
+
+    .scroll-btn {
+      background: $home-blue;
+      color: #fff;
+      bottom: auto;
+      left: 37.5px;
+      position: relative;
+      margin: 50px auto 0 auto;
+    }
+
+    &::after {
+      @extend %shape;
+      height: 10%;
+      background: no-repeat url("/imgs/waves/wave-home-third.svg");
+    }
+
+    @media screen and (max-width: 1210px) {
+      padding: 50px 18% 150px 18%;
+    }
+    @media screen and (max-width: 915px) {
+      padding: 50px 12% 150px 12%;
+    }
+    @media screen and (max-width: 780px) {
+      p {
+        padding: 50px 60px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      padding: 50px 5% 150px 5%;
+      p {
+        padding: 30px 40px;
+      }
+    }
+  }
+
+  .section-four {
+    padding: 50px 25% 150px 25%;
+    background: linear-gradient(to bottom, #22252b, rgba(34, 37, 43, 0) 20%);
+    color: #fcfcfc;
+    position: relative;
+    // overflow-x: hidden;
+    text-align: center;
+
+    .v-line {
+      width: 1px;
+      height: 200px;
+      background: #fff;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: -140px;
+      margin-bottom: -50px;
+      @media screen and (max-width: 550px) {
+        height: 70px;
+        top: -50px;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      margin: 0 0 50px 0;
+    }
+
+    .sec4p {
+      // background: #fafafa;
+      background: url("/imgs/waves/home-section-four-text-bg.svg") no-repeat;
+      background-size: 100% 100%;
+      color: #22252b;
+      padding: 50px 100px;
+      // border-radius: 71% 29% 73% 27% / 44% 44% 56% 56%;
+      display: flex;
+      flex-direction: column;
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+
+        width: 100%;
+        .button {
+          margin: 0 15px;
+        }
+        @media screen and (max-width: 600px) {
+          flex-direction: column-reverse;
+          align-items: center;
+          .button {
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1440px) {
+      padding: 50px 20% 150px 20%;
+    }
+    @media screen and (max-width: 1080px) {
+      padding: 50px 16% 150px 16%;
+
+      .sec4p {
+        padding: 75px 100px;
+      }
+    }
+    @media screen and (max-width: 930px) {
+      padding: 50px 14% 150px 14%;
+
+      .sec4p {
+        padding: 75px 80px;
+      }
+    }
+    @media screen and (max-width: 840px) {
+      padding: 50px 10% 150px 10%;
+
+      .sec4p {
+        padding: 65px 80px;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      padding: 50px 5% 150px 5%;
+
+      .sec4p {
+        padding: 65px 80px;
+        .fixed-width {
+          width: 180px;
+          flex-shrink: 0;
+        }
+      }
+    }
+    @media screen and (max-width: 550px) {
+      padding: 50px 5% 70px 5%;
+
+      .sec4p {
+        padding: 65px 50px;
+        .fixed-width {
+          width: 180px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  @keyframes home-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 </style>
