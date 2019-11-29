@@ -63,8 +63,8 @@
       <div class="square"></div>
       <h2>Stop Being Ordinary</h2>
       <p>
-        Appearing professional is one thing, but being dull is another. So stop
-        being ordinary, and start being <b>original</b>.
+        A boring website is easily forgotten. So let me give you something your
+        customers will remember.
       </p>
       <div class="cross"></div>
 
@@ -76,8 +76,8 @@
       <span class="v-line" id="sectionThree"></span>
       <h2>Don't Be Generic</h2>
       <p>
-        It's impossible to stand out when you appear like all the rest...
-        generic WordPress templates are not your friend.
+        It's impossible to stand out if you appear like all the rest... the same
+        old WordPress template is not your friend.
       </p>
       <div class="generic-squares">
         <div class="square"></div>
@@ -95,9 +95,8 @@
       <h2>Start Being Original</h2>
       <div class="sec4p">
         <p>
-          When you stand out you'll be rememebered. Original design keeps your
-          customers interested—after all, I've held your attention this far,
-          haven't I?
+          Creativity is your most powerful marketing tool. After all, I've held your attention this
+          far, have I not?
         </p>
         <div class="buttons">
           <Button href="/portfolio" class="larger fixed-width">
@@ -352,7 +351,7 @@
       }
     }
     @media screen and (max-width: 780px) {
-      min-height: 700px;
+      min-height: 500px;
 
       .tag-line {
         .logo-container {
@@ -366,6 +365,7 @@
             $size: 125px;
             width: $size;
             height: $size;
+            display: none;
           }
         }
         p {
@@ -387,6 +387,7 @@
       }
     }
     @media screen and (max-width: 490px) {
+      min-height: 560px;
       .tag-line {
         .logo-container {
           h1 {
@@ -399,7 +400,7 @@
       }
 
       .scroll-btn {
-        bottom: 6%;
+        top: calc(100% - 175px);
       }
     }
     @media screen and (max-width: 410px) {
@@ -547,8 +548,8 @@
       margin-bottom: -50px;
 
       /* @media screen and (max-width: 550px) {
-                                                                                                                                            height: 80px;
-                                                                                                                                          } */
+                                                                                                                                                                                height: 80px;
+                                                                                                                                                                              } */
       @media screen and (max-width: 550px) {
         height: 70px;
         top: -50px;
