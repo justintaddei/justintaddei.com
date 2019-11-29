@@ -5,10 +5,12 @@
       <div class="triangle"></div>
       <div class="cross"></div>
 
-      <h1 class="page-title">Get in touch</h1>
-      <p>
-        Let's create something amazing
-      </p>
+      <div>
+        <h1 class="page-title">Get in touch</h1>
+        <p>
+          Let's create something amazing
+        </p>
+      </div>
 
       <button
         class="scroll-btn"
@@ -276,22 +278,34 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative;
     color: #22252b;
     width: 100%;
 
-    padding: 0 25%;
+    // padding: 0 25%;
 
     &::after {
       @extend %shape;
       height: 25%;
+      right: 0;
+      left: auto;
       background: no-repeat url("/imgs/waves/wave-contact-first.svg");
     }
 
     h1 {
       margin: 0;
       position: relative;
+      @media screen and (max-width: 720px) {
+        font-size: 55px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 45px;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 40px;
+      }
     }
     p {
       margin: 0;
@@ -299,6 +313,20 @@
       color: #292c34;
 
       font-size: 42px;
+
+      @media screen and (max-width: 720px) {
+        font-size: 36px;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 26px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 380px) {
+        font-size: 20px;
+      }
     }
 
     .circle {
@@ -313,6 +341,15 @@
       top: 0;
       right: 0;
       animation: contact-circle 10s linear infinite alternate;
+
+      @media screen and (max-width: 600px) {
+        width: 750px;
+        height: 750px;
+      }
+      @media screen and (max-width: 490px) {
+        width: 500px;
+        height: 500px;
+      }
 
       @keyframes contact-circle {
         from {
@@ -334,7 +371,7 @@
       $w: 100px;
       $color: $home-green;
       transform: rotate(-30deg);
-      left: 0;
+      left: 50px;
       bottom: -100px;
       background: $color;
       height: $h;
@@ -362,6 +399,21 @@
         left: 0;
         transform: rotate(90deg);
       }
+
+      @media screen and (max-width: 600px) {
+        $h: 250px;
+        $w: 50px;
+        left: 50px;
+        bottom: 0px;
+
+        height: $h;
+        width: $w;
+
+        &:after {
+          height: $h;
+          width: $w;
+        }
+      }
     }
 
     .triangle {
@@ -370,8 +422,17 @@
       height: 0;
       border-left: 375px solid transparent;
       border-right: 375px solid transparent;
-      // border-bottom: 50px solid #7a0039;
       border-bottom: 500px solid $home-blue;
+      @media screen and (max-width: 600px) {
+        border-left: 375px solid transparent;
+        border-right: 375px solid transparent;
+        border-bottom: 400px solid $home-blue;
+      }
+      @media screen and (max-width: 490px) {
+        border-left: 275px solid transparent;
+        border-right: 275px solid transparent;
+        border-bottom: 300px solid $home-blue;
+      }
       position: absolute;
       top: 0;
       left: 0;
@@ -381,12 +442,17 @@
 
   .section-two {
     width: 100%;
-    height: 100vw;
+    min-height: 100vw;
     background: #22252b;
     position: relative;
     padding: 75px 25%;
+    @media screen and (max-width: 1080px) {
+      padding: 75px 15%;
+    }
+    @media screen and (max-width: 720px) {
+      padding: 75px 8%;
+    }
     color: #fcfcfc;
-    // text-align: center;
   }
 
   .scroll-btn {
@@ -429,6 +495,18 @@
     margin: 0 auto 50px auto;
     list-style: none;
     font-size: 30px;
+    @media screen and (max-width: 600px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 515px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 430px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 16px;
+    }
     border: 2px solid $home-green;
     border-radius: 15px;
     padding: 0;
@@ -436,11 +514,26 @@
     li {
       margin: 0;
       padding: 25px 35px;
+      @media screen and (max-width: 430px) {
+        padding: 25px 15px;
+      }
       display: flex;
       align-items: center;
 
       .material-icons {
         font-size: 48px;
+        @media screen and (max-width: 600px) {
+          font-size: 42px;
+        }
+        @media screen and (max-width: 515px) {
+          font-size: 35px;
+        }
+        @media screen and (max-width: 430px) {
+          font-size: 32px;
+        }
+        @media screen and (max-width: 380px) {
+          font-size: 25px;
+        }
         margin-right: 16px;
       }
 
@@ -486,10 +579,17 @@
     flex-direction: column;
     font-size: 30px;
 
+    @media screen and (max-width: 430px) {
+      font-size: 25px;
+    }
+
     input,
     textarea {
       margin: 15px auto;
       width: 100%;
+      @media screen and (max-width: 430px) {
+        font-size: 20px;
+      }
     }
   }
 
