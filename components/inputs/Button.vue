@@ -1,6 +1,10 @@
 <template>
   <div class="button">
-    <nuxt-link class="text" :to="href"><slot /></nuxt-link>
+    <span v-if="fake" class="text"><slot /></span>
+    <a v-else-if="external" target="_blank" :href="href" class="text"
+      ><slot
+    /></a>
+    <nuxt-link v-else class="text" :to="href"><slot /></nuxt-link>
     <svg
       class="wobble-line"
       style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421"
@@ -23,7 +27,9 @@
       href: {
         type: String,
         default: "/"
-      }
+      },
+      external: Boolean,
+      fake: Boolean
     }
   };
 </script>
@@ -38,6 +44,7 @@
     margin: 0 5px;
     font-size: 20px;
     outline: none;
+    cursor: pointer;
 
     .material-icons {
       margin: 0 0 0 15px;

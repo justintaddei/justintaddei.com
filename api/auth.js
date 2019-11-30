@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const jwt = require("express-jwt");
 const jsonwebtoken = require("jsonwebtoken");
+require("dotenv").config();
 
 // Create app
 const app = express();

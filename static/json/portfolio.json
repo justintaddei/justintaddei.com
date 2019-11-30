@@ -1,3 +1,20 @@
 {
-  "portfolio": []
+  "portfolio": [
+    {
+      "domain": "production.dannytaddei",
+      "topLevelDomain": ".com",
+      "about": "Read about how to pick the right producer in a beautiful story-telling layout or listen to samples of work produced for some of Danny Taddei's clients using the built-in music player.",
+      "type": "business,portfolio",
+      "desktopImage": "/uploads/c420f7ad-cd3e-40d8-bb12-40527ec5dd46.png",
+      "mobileImage": "/uploads/6da9bb94-d873-4659-84b3-7c9c7cf78205.png"
+    },
+    {
+      "domain": "dannytaddei",
+      "topLevelDomain": ".com",
+      "about": "Find information about Danny Taddei and listen to any of his tracks using the built-in music player. Hear a song you like? Purchase the track and any of his merchandise using the complete e-commerce solution",
+      "type": "individual,online store",
+      "desktopImage": "/uploads/3556c5b4-d001-4abe-9a0b-276e8e6835f1.png",
+      "mobileImage": "/uploads/e84e3b6d-2f10-40e0-8969-b68073776c40.png"
+    }
+  ]
 }

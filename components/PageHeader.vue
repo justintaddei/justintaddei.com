@@ -1,25 +1,27 @@
 <template>
   <header :class="{ dark: isDark, filled: filled }">
     <div class="logo">
-      <svg
-        viewBox="0 0 1703 1081"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        stroke-linejoin="round"
-        stroke-miterlimit="2"
-      >
-        <circle
-          cx="3644.8"
-          cy="1962.31"
-          r="22.166"
-          transform="matrix(7.66518 0 0 7.66634 -27767.317 -14133.19)"
-        />
-        <path
-          d="M1356.075.476h346.7v346.7h-346.7zM794.584.474v736.428c0 91.69-36.64 179.546-101.717 244.097-65.078 64.474-153.304 100.275-244.903 99.509h-.076V.474h346.696zM901.82.474h346.695v1079.988H901.82z"
-        />
-      </svg>
+      <nuxt-link to="/">
+        <svg
+          viewBox="0 0 1703 1081"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          stroke-linejoin="round"
+          stroke-miterlimit="2"
+        >
+          <circle
+            cx="3644.8"
+            cy="1962.31"
+            r="22.166"
+            transform="matrix(7.66518 0 0 7.66634 -27767.317 -14133.19)"
+          />
+          <path
+            d="M1356.075.476h346.7v346.7h-346.7zM794.584.474v736.428c0 91.69-36.64 179.546-101.717 244.097-65.078 64.474-153.304 100.275-244.903 99.509h-.076V.474h346.696zM901.82.474h346.695v1079.988H901.82z"
+          />
+        </svg>
+      </nuxt-link>
 
       <h2
         :style="{
@@ -128,6 +130,9 @@
       font-size: 25px;
     }
   }
+  a {
+    color: inherit;
+  }
   svg {
     width: 65px;
     height: 65px;
@@ -142,6 +147,10 @@
     margin-left: 20px;
     position: relative;
     top: 5px;
+
+    @media screen and (max-width: 356px) {
+      display: none;
+    }
   }
 
   nav {

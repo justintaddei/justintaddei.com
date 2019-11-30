@@ -253,7 +253,6 @@
           this.$axios
             .post("/api/contact-form", formData)
             .then(res => {
-              console.log("res :", res);
               this.error = res.data;
             })
             .catch(err => {
@@ -442,7 +441,6 @@
 
   .section-two {
     width: 100%;
-    min-height: 100vw;
     background: #22252b;
     position: relative;
     padding: 75px 25%;

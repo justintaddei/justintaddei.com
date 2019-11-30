@@ -1,10 +1,26 @@
-import express from "express";
-import jwt from "jsonwebtoken";
 import { json } from "body-parser";
-import multer from "multer";
-import { v4 as uuid } from "uuid";
-import { extname } from "path";
+import express from "express";
 import { readFile, writeFile } from "fs";
+import jwt from "jsonwebtoken";
+import multer from "multer";
+import { extname } from "path";
+import { v4 as uuid } from "uuid";
+
+require("dotenv").config();
+
+const JSON_PATH = `${__dirname}/../static/json/portfolio.json`;
+function getPortfolioJSON() {
+  return new Promise(resolve => {
+    readFile(JSON_PATH, (err, data) => {
+      if (err) {
+        console.error(err);
+        return reject(err);
+      }
+
+      resolve(JSON.parse(data));
+    });
+  });
+}
 
 const upload = multer({
   storage: multer.diskStorage({
@@ -19,22 +35,26 @@ const app = express();
 
 app.use(json());
 
-app.get("/all", (req, res) => {
-  res.json({
-    data: [
-      {
-        id: "an id"
-      },
-      {
-        id: "another id"
-      }
-    ]
-  });
+app.get("/all", async (req, res) => {
+  res.json(await getPortfolioJSON());
 });
 
-app.get("/:id", (req, res) => {
-  res.json({
-    id: req.params.id
+app.get("/:domain", async (req, res) => {
+  const { portfolio } = await getPortfolioJSON();
+
+  const searchDomain = req.params.domain;
+
+  for (const entry of portfolio) {
+    if (entry.domain === searchDomain)
+      return res.json({
+        data: entry,
+        error: null
+      });
+  }
+
+  return res.json({
+    data: null,
+    error: "UNKNOWN_DOMAIN"
   });
 });
 
@@ -44,30 +64,23 @@ const uploadMiddleware = upload.fields([
 ]);
 
 app.post("/", checkToken, uploadMiddleware, async ({ body, files }, res) => {
-  const JSON_PATH = `${__dirname}/json/portfolio.json`;
-  console.log(__dirname);
-  readFile(JSON_PATH, (err, data) => {
+  const json = await getPortfolioJSON().catch(err => {
+    res.sendStatus(500);
+  });
+
+  json.portfolio.unshift({
+    ...body,
+    desktopImage: `/uploads/${files.desktopImage[0].filename}`,
+    mobileImage: `/uploads/${files.mobileImage[0].filename}`
+  });
+
+  writeFile(JSON_PATH, JSON.stringify(json, null, 2), err => {
     if (err) {
       res.sendStatus(500);
       console.error(err);
     }
 
-    const json = JSON.parse(data);
-
-    json.portfolio.unshift({
-      ...body,
-      desktopImage: `/uploads/${files.desktopImage[0].filename}`,
-      mobileImage: `/uploads/${files.mobileImage[0].filename}`
-    });
-
-    writeFile(JSON_PATH, JSON.stringify(json, null, 2), err => {
-      if (err) {
-        res.sendStatus(500);
-        console.error(err);
-      }
-
-      res.sendStatus(200);
-    });
+    res.sendStatus(200);
   });
 });
 

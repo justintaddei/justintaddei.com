@@ -23,6 +23,15 @@ body {
   opacity: 0;
 }
 
+.none-enter-active,
+.none-leave-active {
+  transition: none;
+}
+.none-enter,
+.none-leave-to {
+  opacity: 0;
+}
+
 a {
   text-decoration: none;
 }

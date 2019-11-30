@@ -95,8 +95,8 @@
       <h2>Start Being Original</h2>
       <div class="sec4p">
         <p>
-          Creativity is your most powerful marketing tool. After all, I've held your attention this
-          far, have I not?
+          Creativity is your most powerful marketing tool. After all, I've held
+          your attention this far, have I not?
         </p>
         <div class="buttons">
           <Button href="/portfolio" class="larger fixed-width">
@@ -276,8 +276,7 @@
 
     .grad {
       position: absolute;
-      background: linear-gradient(to bottom, #282c34, transparent 190px);
-      background: linear-gradient(to bottom, #fff, transparent 190px);
+      background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0) 190px);
       width: 100vw;
       height: 100vh;
       top: 0;
@@ -548,8 +547,8 @@
       margin-bottom: -50px;
 
       /* @media screen and (max-width: 550px) {
-                                                                                                                                                                                height: 80px;
-                                                                                                                                                                              } */
+                                                                                                                                                                                        height: 80px;
+                                                                                                                                                                                      } */
       @media screen and (max-width: 550px) {
         height: 70px;
         top: -50px;
