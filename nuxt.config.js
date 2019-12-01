@@ -29,7 +29,7 @@ module.exports = {
   serverMiddleware: ["~/api/portfolio", "~/api/auth", "~/api/contact-form"],
   server: {
     host: "0.0.0.0",
-    port: 80
+    port: process.env.PORT
   },
   /*
    ** Customize the progress-bar color
