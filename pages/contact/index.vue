@@ -130,7 +130,7 @@
     components: { VueRecaptcha },
     head() {
       return {
-        title: "Contact | Offical site of Justin Taddei"
+        title: "Contact | Official site of Justin Taddei"
       };
     },
 

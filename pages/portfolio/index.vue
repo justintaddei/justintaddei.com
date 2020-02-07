@@ -75,7 +75,7 @@
     components: { Button },
     head() {
       return {
-        title: "Portfolio | Offical site of Justin Taddei"
+        title: "Portfolio | Official site of Justin Taddei"
       };
     },
 

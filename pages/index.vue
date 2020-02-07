@@ -122,7 +122,7 @@
     },
     head() {
       return {
-        title: "Freelance Web Design | Offical site of Justin Taddei"
+        title: "Freelance Web Design | Official site of Justin Taddei"
       };
     },
 
@@ -547,8 +547,8 @@
       margin-bottom: -50px;
 
       /* @media screen and (max-width: 550px) {
-                                                                                                                                                                                        height: 80px;
-                                                                                                                                                                                      } */
+                                                                                                                                                                                          height: 80px;
+                                                                                                                                                                                        } */
       @media screen and (max-width: 550px) {
         height: 70px;
         top: -50px;
