@@ -6,7 +6,7 @@
       <input type="text" placeholder="Username" v-model="user" />
       <input type="password" placeholder="Password" v-model="pass" />
     </p>
-    <Button class="primary" @click="login">Login</Button>
+    <span @click="login()"><Button fake class="primary">Login</Button></span>
   </div>
 </template>
 
@@ -25,6 +25,7 @@
     },
     methods: {
       login() {
+        console.log("login");
         this.$auth
           .loginWith("local", {
             data: {

@@ -353,7 +353,7 @@
     .portfolio-wrapper {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
 
     .portfolio-entry {
@@ -397,7 +397,7 @@
 
         .buttons {
           display: flex;
-          justify-content: space-evenly;
+          justify-content: space-around;
           @media screen and (max-width: 550px) {
             flex-direction: column;
             align-items: center;
