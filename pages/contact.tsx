@@ -31,9 +31,11 @@ const Contact = () => {
 
         if (!form.checkValidity()) return
 
-        recaptchaRef.current.execute()
+        const token = await recaptchaRef.current.executeAsync()
 
         const formData = new FormData(form)
+
+        formData.set('g-recaptcha-response', token)
 
         const jsonFormData = Object.fromEntries(formData) as { [key: string]: string }
         const res = await fetch('/api/email', {
