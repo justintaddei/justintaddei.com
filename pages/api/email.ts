@@ -1,7 +1,6 @@
 import { STATUS_CODES } from 'http'
 import { NextApiRequest, NextApiResponse } from 'next'
 import nodemailer from 'nodemailer'
-import { clearLine } from 'readline'
 
 // Create the transporter with the required configuration for Outlook
 // change the user and pass !
@@ -31,7 +30,7 @@ const post = async (req: NextApiRequest, res: NextApiResponse) => {
         res.status(400).json({
             success: false,
             message:
-                'Sorry, google recaptcha detected suspicious behavior and the form cannot be completed at this time.'
+                'Sorry, Google Recaptcha detected suspicious behavior and the form cannot be completed at this time.'
         })
         return
     }
@@ -53,7 +52,7 @@ const post = async (req: NextApiRequest, res: NextApiResponse) => {
             <li>Email: <a href="mailto:${email}">${email}</a></li>
         </ul>
         <h2>Message:</h2>
-        <p>${message}</p>
+        <pre>${message}</pre>
     `
     }
     // send mail with defined transport object
