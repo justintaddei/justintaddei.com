@@ -1,0 +1,240 @@
+.sectionOne {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(var(--color-dark-gray));
+    color: rgb(var(--color-white));
+
+    .randomShape {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    header {
+        position: absolute;
+        top: calc(33.333% + var(--text-sub-heading));
+        left: 33.333%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 760px) {
+            left: 50%;
+        }
+    }
+
+    .slopes {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .scrollButton {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+
+        z-index: 1;
+    }
+}
+
+.sectionTwo {
+    background: rgb(var(--color-white));
+    position: relative;
+
+    padding: 128px 0;
+
+    .blueShapes {
+        position: absolute;
+        transform: rotate(30deg);
+
+        &:nth-child(1) {
+            top: 25px;
+            right: 8%;
+        }
+        &:nth-child(2) {
+            top: 500px;
+            left: 14%;
+        }
+        &:nth-child(3) {
+            top: 600px;
+            right: 25%;
+        }
+        &:nth-child(4) {
+            top: 1200px;
+            left: 7%;
+        }
+        &:nth-child(5) {
+            top: 2000px;
+            right: 15%;
+        }
+
+        @media screen and (max-width: 650px) {
+            &:nth-child(2) {
+                top: 650px;
+                left: 8%;
+            }
+            &:nth-child(3) {
+                top: 800px;
+                right: 10%;
+            }
+            &:nth-child(4) {
+                top: 1150px;
+                left: -10px;
+            }
+            &:nth-child(5) {
+                top: 1650px;
+                right: 15%;
+            }
+        }
+    }
+
+    .portfolioItem {
+        display: grid;
+
+        grid-template: 1fr / 1fr 1fr;
+        grid-template-areas: 'preview details';
+        gap: 96px;
+
+        padding: 32px 0;
+
+        margin-bottom: 384px;
+
+        &.last {
+            margin-bottom: 96px;
+        }
+
+        .decor {
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 64px;
+            margin-left: -1px;
+            margin-top: -224px;
+            z-index: 1;
+
+            background: rgb(var(--color-dark-gray));
+        }
+
+        &.first .decor {
+            margin-top: -144px;
+        }
+
+        .preview {
+            grid-area: preview;
+            place-self: center right;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .previewImage {
+                margin-bottom: 32px;
+                > div {
+                    border-radius: 16px;
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        .details {
+            grid-area: details;
+            place-self: center left;
+            position: relative;
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                $size: 500px;
+                width: $size;
+                height: $size;
+
+                transform: translate(-50%, -50%);
+            }
+
+            h2,
+            a,
+            p {
+                position: relative;
+                z-index: 1;
+                padding: 0 32px 0 0;
+            }
+
+            a {
+                display: inline-block;
+                margin: 8px 0 24px;
+            }
+
+            p {
+                max-width: 512px;
+            }
+        }
+
+        // Scroll styles
+        .preview,
+        .details {
+            transition: transform 0.2s ease-out, opacity 0.2s linear;
+        }
+
+        .preview {
+            transform: translateX(25px);
+            opacity: 0;
+        }
+        .details {
+            transform: translateX(-25px);
+            opacity: 0;
+        }
+
+        @media screen and (max-width: 930px) {
+            grid-template: auto auto / 1fr;
+            grid-template-areas:
+                'details'
+                'preview';
+
+            margin-bottom: 256px;
+
+            .decor {
+                margin-top: -156px;
+            }
+
+            .preview,
+            .details {
+                padding: 0 32px;
+                place-self: center;
+            }
+
+            .details {
+                svg {
+                    $size: 300px;
+                    width: $size;
+                    height: $size;
+                }
+
+                p {
+                    padding: 0;
+                }
+            }
+
+            .preview {
+                transform: none;
+                opacity: 0;
+            }
+            .details {
+                transform: none;
+                opacity: 0;
+            }
+
+            &.last {
+                margin-bottom: 96px;
+            }
+        }
+
+        .intersecting,
+        .intersecting + .details {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    .getInTouch {
+        display: grid;
+        place-items: center;
+    }
+}

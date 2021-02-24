@@ -1,0 +1,343 @@
+.sectionOne {
+    height: 100vh;
+    position: relative;
+
+    .arcs {
+        position: fixed;
+        left: 100vw;
+        top: 50vh;
+        animation: arc-rotate 30s linear infinite reverse, fade-in 2s ease;
+        contain: layout;
+        will-change: transform;
+        z-index: -1;
+        @keyframes arc-rotate {
+            from {
+                transform: translate3d(0, 0, 0) rotate(0deg);
+            }
+            to {
+                transform: translate3d(0, 0, 0) rotate(360deg);
+            }
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+        }
+        .arc {
+            border-radius: 50%;
+            position: absolute;
+            will-change: transform;
+
+            &:nth-child(1) {
+                border: 15px solid rgb(var(--color-salmon));
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                $d: 50vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%);
+            }
+            &:nth-child(2) {
+                border: 15px solid rgb(var(--color-blue));
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                $d: 20vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%) rotate(230deg);
+            }
+            &:nth-child(3) {
+                border: 15px solid rgb(var(--color-green));
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                $d: 75vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%) rotate(25deg);
+            }
+            &:nth-child(4) {
+                border: 15px solid rgb(var(--color-purple));
+                border-top-color: transparent;
+                border-right-color: transparent;
+                $d: 90vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%) rotate(-50deg);
+            }
+            &:nth-child(5) {
+                border: 15px solid rgb(var(--color-salmon));
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                $d: 100vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%) rotate(175deg);
+            }
+            &:nth-child(6) {
+                border: 15px solid rgb(var(--color-blue));
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                $d: 110vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%) rotate(-15deg);
+            }
+            &:nth-child(7) {
+                border: 15px solid rgb(var(--color-yellow));
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                $d: 125vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%) rotate(280deg);
+            }
+            &:nth-child(8) {
+                border: 15px solid rgb(var(--color-orange));
+                border-top-color: transparent;
+                border-right-color: transparent;
+                $d: 150vw;
+                width: $d;
+                height: $d;
+                transform: translate(-50%, -50%) rotate(25deg);
+            }
+        }
+    }
+
+    .gradient {
+        position: absolute;
+        background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0) 190px);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .content {
+        position: absolute;
+        left: 33.333%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 32px;
+
+        @media screen and (max-width: 760px) {
+            left: 50%;
+        }
+
+        h1,
+        h2 {
+            // Text stroke
+            text-shadow: 1px 0 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+            white-space: nowrap;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+        .subHeading {
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+    }
+
+    .shapeOne {
+        position: absolute;
+        width: 100%;
+        height: 22vw;
+        min-width: 760px;
+        min-height: 170px;
+        bottom: 0;
+        right: 0;
+    }
+
+    .scrollButtonOne {
+        position: absolute;
+        bottom: Max(10vw, 72px);
+        left: 50%;
+
+        z-index: 1;
+    }
+}
+
+.sectionTwo,
+.sectionThree,
+.sectionFour {
+    position: relative;
+
+    // Clearfix because I want the height
+    // to be controlled by the top/bottom margins of
+    // the heading and scroll-button.
+    &::before,
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 128px;
+        margin-bottom: 64px;
+        padding: 0 32px;
+    }
+
+    p {
+        width: calc(100% - 32px);
+        max-width: 595px;
+        margin: auto;
+        padding: 0 32px;
+    }
+}
+
+.sectionTwo {
+    color: rgb(var(--color-white));
+    background: rgb(var(--color-dark-gray));
+
+    .decor {
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 128px;
+        margin-left: -1px;
+        margin-top: -64px;
+        z-index: 1;
+
+        background: rgb(var(--color-white));
+
+        &:last-of-type {
+            background: rgb(var(--color-dark-gray));
+        }
+    }
+
+    .shape {
+        position: absolute;
+
+        &.triangle {
+            top: 55%;
+            left: 6vw;
+        }
+        &.square {
+            top: 48px;
+            left: 14vw;
+        }
+        &.cross {
+            bottom: 160px;
+            right: 26vw;
+        }
+        &.circle {
+            top: 0px;
+            right: 14vw;
+        }
+    }
+
+    p {
+        margin-bottom: 96px;
+    }
+
+    .scrollButtonTwo {
+        margin: auto;
+        margin-bottom: 256px;
+    }
+
+    .shapeTwo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+    }
+}
+
+.sectionThree {
+    position: relative;
+    background: rgb(var(--color-white));
+
+    p {
+        margin-bottom: 48px;
+    }
+
+    .shapes {
+        display: flex;
+        justify-content: space-around;
+        width: calc(100% - 32px);
+        max-width: 595px;
+        margin: auto;
+        margin-bottom: 128px;
+    }
+
+    .scrollButtonThree {
+        position: relative;
+        margin: auto;
+        top: 24px;
+        z-index: 2;
+    }
+
+    .shapeThree {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 1;
+        transform: translate(0, 100%) scale(1, -1);
+    }
+}
+
+.sectionFour {
+    position: relative;
+    background: #f3f3f3;
+
+    p {
+        max-width: 355px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+
+        > a {
+            margin: 0 12px;
+        }
+        @media screen and (max-width: 400px) {
+            flex-direction: column;
+            padding: 0 32px;
+            > a {
+                margin: 12px;
+            }
+        }
+    }
+
+    .portfolioPreview {
+        display: grid;
+        place-items: center;
+        gap: 48px;
+        grid-template: 1fr / 1fr 1fr 1fr;
+        margin: 64px 32px 128px 32px;
+
+        @media screen and (max-width: 760px) {
+            grid-template: 1fr 1fr 1fr / 1fr;
+        }
+
+        .portfolioImage > div {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.fadeInOnIntersection {
+    transition: opacity 300ms ease-in;
+    opacity: 0;
+
+    &.intersecting {
+        opacity: 1;
+    }
+}

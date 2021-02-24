@@ -1,0 +1,37 @@
+:root {
+    /* Color styles */
+    --color-white: 252, 252, 252;
+    --color-salmon: 245, 133, 133;
+    --color-purple: 157, 76, 188;
+    --color-blue: 20, 112, 166;
+    --color-green: 20, 166, 151;
+    --color-orange: 245, 158, 127;
+    --color-gold: 245, 186, 113;
+    --color-yellow: 245, 211, 108;
+    --color-dark-gray: 34, 37, 43;
+    --color-mid-gray: 196, 196, 196;
+    --color-charcoal: 40, 44, 52;
+    --color-overlay-light: rgba(40, 44, 52, 0.04);
+    --color-overlay-dark: rgba(252, 252, 252, 0.06);
+
+    /* Text-size styles */
+    /* base size: paragraph (24px) */
+    --text-heading-1: 3rem;
+    --text-heading-2: 2rem;
+    --text-heading-3: 2rem;
+    --text-sub-heading: 1.33rem;
+    --text-paragraph: 1rem;
+    --text-sub-text: 0.67rem;
+}
+
+@media screen and (max-width: 512px) {
+    :root {
+        --text-sub-text: 13.4px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    :root {
+        --text-paragraph: 16px;
+    }
+}

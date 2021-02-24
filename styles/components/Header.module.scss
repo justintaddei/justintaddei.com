@@ -1,0 +1,104 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+
+    width: 100%;
+    padding: 8px 64px;
+
+    @media screen and (max-width: 512px) {
+        padding: 8px 32px;
+    }
+
+    &.light {
+        color: rgb(var(--color-dark-gray));
+        --color-overlay: var(--color-overlay-light);
+        --header-background: var(--color-white);
+    }
+    &.dark {
+        color: rgb(var(--color-white));
+        --color-overlay: var(--color-overlay-dark);
+        --header-background: var(--color-dark-gray);
+    }
+
+    .background {
+        background: rgb(var(--header-background));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .navOpen,
+    .navClose {
+        display: none;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template: 1fr / repeat(3, auto);
+        gap: 32px;
+
+        list-style: none;
+    }
+
+    @media screen and (max-width: 760px) {
+        nav {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 90%;
+            max-width: 300px;
+            height: 100vh;
+            top: 0;
+            padding-top: 64px;
+            background: rgb(var(--header-background));
+            ul {
+                grid-template: repeat(3, auto) / 1fr;
+                place-items: center stretch;
+                gap: 0px;
+                position: relative;
+                li a {
+                    width: 100%;
+                    height: 72px;
+                    background: transparent;
+                }
+            }
+        }
+
+        .navOpen,
+        .navClose {
+            display: block;
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            box-sizing: content-box;
+            cursor: pointer;
+        }
+
+        .navClose {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+
+        .overlay {
+            content: '';
+            display: block;
+            position: fixed;
+            top: -48px;
+            height: calc(100vh + 48px);
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+    }
+}

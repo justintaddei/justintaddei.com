@@ -1,0 +1,45 @@
+.button {
+    position: relative;
+    $size: 48px;
+    width: $size;
+    height: $size;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50%;
+    background: rgb(var(--btn-background-color));
+    box-shadow: 0 8px 32px var(--btn-shadow-color);
+
+    &.pulse {
+        &::before {
+            content: '';
+            position: absolute;
+            width: $size;
+            height: $size;
+            top: 50%;
+            left: 50%;
+            margin: (-$size/2) 0 0 (-$size/2);
+            z-index: -1;
+            pointer-events: none;
+
+            background: rgb(var(--btn-background-color), 1);
+            border-radius: 50%;
+
+            animation: scroll-button-pulse 2s ease-out 0s infinite;
+
+            @keyframes scroll-button-pulse {
+                to {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

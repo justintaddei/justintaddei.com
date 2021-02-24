@@ -1,0 +1,88 @@
+/* 
+
+--text-heading-1: 3rem;
+--text-heading-2: 2rem;
+--text-heading-3: 2rem;
+--text-sub-heading: 1.33rem;
+--text-paragraph: 1rem;
+--text-sub-text: 0.67rem;
+
+*/
+
+html {
+    font-size: 20px;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+.h1,
+.h2 {
+    font-family: 'Sky of Eden Regular', sans-serif;
+    font-display: block;
+    /* Safari cuts off the top of the font otherwise 😢 */
+    line-height: 1.35em;
+}
+
+h1,
+.h1 {
+    font-size: var(--text-heading-1);
+    font-weight: normal;
+}
+
+h2,
+.h2 {
+    font-size: var(--text-heading-2);
+    font-weight: normal;
+}
+
+h3,
+h4,
+.h3,
+.h4 {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.2;
+}
+
+h3,
+.h3 {
+    font-weight: 600;
+    font-size: var(--text-heading-3);
+}
+
+h4,
+.h4 {
+    font-size: var(--text-sub-heading);
+    font-weight: normal;
+}
+
+p,
+.paragraph {
+    font-size: var(--text-paragraph);
+    line-height: 1.6;
+}
+
+small,
+.sub-text {
+    font-size: var(--text-sub-text);
+}
+
+@media screen and (max-width: 512px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    html {
+        font-size: 12px;
+    }
+
+    h4,
+    .h4 {
+        font-weight: bold;
+    }
+}

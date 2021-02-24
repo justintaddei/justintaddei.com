@@ -1,0 +1,12 @@
+export type Color =
+    | 'white'
+    | 'salmon'
+    | 'purple'
+    | 'blue'
+    | 'green'
+    | 'orange'
+    | 'gold'
+    | 'yellow'
+    | 'dark-gray'
+    | 'mid-gray'
+    | 'charcoal'
