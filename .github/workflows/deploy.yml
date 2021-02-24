@@ -1,0 +1,34 @@
+name: SSH Deploy
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: NPM Install
+              run: |
+                  npm ci
+                  npm run build
+            - name: Deploy to Server
+              uses: easingthemes/ssh-deploy@v2.1.5
+              env:
+                  SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+                  ARGS: '-rltgoDzvO --delete'
+                  SOURCE: '/'
+                  REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+                  REMOTE_USER: ${{ secrets.REMOTE_USER }}
+                  TARGET: ${{ secrets.REMOTE_TARGET }}
+            - name: Restart pm2 app
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.REMOTE_HOST }}
+                  username: ${{ secrets.REMOTE_USER }}
+                  key: ${{ secrets.SERVER_SSH_KEY }}
+                  script: |
+                      pm2 restart justintaddei
