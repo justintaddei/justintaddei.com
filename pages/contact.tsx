@@ -51,8 +51,8 @@ const Contact = () => {
 
     return (
         <DefaultLayout
-            title="Freelance Web Design"
-            description="Professional freelance web development and graphic design by Justin Taddei."
+            title="Contact Me"
+            description="Let's get the ball rolling on your new site. Reach out to me on one of these platforms."
         >
             <main className={classes.main}>
                 <Shape className={classes.circle} size={625} color="yellow" type="circle" />
