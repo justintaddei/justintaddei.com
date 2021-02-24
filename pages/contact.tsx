@@ -42,8 +42,6 @@ const Contact = () => {
             body: JSON.stringify(jsonFormData)
         }).then((r) => r.json())
 
-        alert(JSON.stringify(res))
-
         setFormSubmissionResult({ ...res, name: jsonFormData.name.split(' ')[0] })
     }
 

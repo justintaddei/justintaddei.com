@@ -26,7 +26,7 @@ const verifyRecaptcha = async (token: string) => {
 const post = async (req: NextApiRequest, res: NextApiResponse) => {
     const { name, email, message } = req.body as { [key: string]: string }
 
-    const verified = await verifyRecaptcha(req.body['g-recaptcha-token'])
+    const verified = await verifyRecaptcha(req.body['g-recaptcha-response'])
     if (!verified) {
         res.status(400).json({
             success: false,
