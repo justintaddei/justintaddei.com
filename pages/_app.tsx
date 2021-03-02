@@ -2,10 +2,11 @@ import Header from '@/components/Header'
 import '@/styles/globals.css'
 import '@/styles/typography.css'
 import '@/styles/variables.css'
+import { AppProps } from 'next/dist/next-server/lib/router/router'
 import Head from 'next/head'
 import React, { ReactNode } from 'react'
 
-const app = ({ Component, pageProps }): ReactNode => (
+const app = ({ Component, pageProps }: AppProps): ReactNode => (
     <>
         <Head>
             <link rel="icon" href="/favicon.ico" />

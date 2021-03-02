@@ -152,7 +152,7 @@ const Contact = () => {
                                 href="https://instagram.com/justintaddei.js"
                             >
                                 <Instagram />
-                                /justintaddei.js
+                                @justintaddei.js
                             </a>
                         </li>
                     </ul>
